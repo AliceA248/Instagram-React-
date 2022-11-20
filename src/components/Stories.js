@@ -1,4 +1,4 @@
-export default function Stories() {
+/*export default function Stories() {
     return (
         <div class="stories">
             <div class="story">
@@ -79,4 +79,66 @@ export default function Stories() {
         </div>
     )
 }
+*/
 
+export default function Stories() {
+    return ( 
+        <div class="stories">
+            <Stories
+            imagem="assets/img/9gag.svg"
+            texto="9gag"
+            
+            />
+            <Stories
+            imagem="assets/img/meowed.svg"
+            texto="meowed"
+            />
+            <Stories
+            imagem="assets/img/barked.svg"
+            texto="barked"
+            />
+            <Stories
+            imagem="assets/img/nathanwpylestrangeplanet.svg"
+            texto="nathanwpylestrangeplanet"
+            />
+            <Stories
+            imagem="assets/img/wawawicomics.svg"
+            texto="wawawicomics"
+            />
+            <Stories
+            imagem="assets/img/respondeai.svg"
+            texto="respondeai"
+            />
+            <Stories
+            imagem="assets/img/filomoderna.svg"
+            texto="filomoderna"
+            />
+            <Stories
+            imagem="assets/img/memeriagourmet.svg"
+            texto="memeriagourmet"
+            />
+            <Stories
+            imagem="assets/img/memeriagourmet.svg"
+            texto="memeriagourmet"
+            />
+            <div class="setinha">
+                <ion-icon name="chevron-forward-circle"></ion-icon>
+            </div>
+        </div>
+
+    )
+}
+
+
+function Story(a) {
+    return (
+            <div class="story">
+                <div class="imagem">
+                    {a.imagem}
+                </div>
+                <div class="usuario">
+                    {a.texto}
+                </div>
+            </div>
+    )
+}
