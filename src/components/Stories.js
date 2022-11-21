@@ -87,7 +87,6 @@ export default function Stories() {
             <Stories
             imagem="assets/img/9gag.svg"
             texto="9gag"
-            
             />
             <Stories
             imagem="assets/img/meowed.svg"
