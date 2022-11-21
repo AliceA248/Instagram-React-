@@ -84,39 +84,39 @@
 export default function Stories() {
     return ( 
         <div class="stories">
-            <Stories
+            <Story
             imagem="assets/img/9gag.svg"
             texto="9gag"
             />
-            <Stories
+            <Story
             imagem="assets/img/meowed.svg"
             texto="meowed"
             />
-            <Stories
+            <Story
             imagem="assets/img/barked.svg"
             texto="barked"
             />
-            <Stories
+            <Story
             imagem="assets/img/nathanwpylestrangeplanet.svg"
             texto="nathanwpylestrangeplanet"
             />
-            <Stories
+            <Story
             imagem="assets/img/wawawicomics.svg"
             texto="wawawicomics"
             />
-            <Stories
+            <Story
             imagem="assets/img/respondeai.svg"
             texto="respondeai"
             />
-            <Stories
+            <Story
             imagem="assets/img/filomoderna.svg"
             texto="filomoderna"
             />
-            <Stories
+            <Story
             imagem="assets/img/memeriagourmet.svg"
             texto="memeriagourmet"
             />
-            <Stories
+            <Story
             imagem="assets/img/memeriagourmet.svg"
             texto="memeriagourmet"
             />
@@ -129,14 +129,15 @@ export default function Stories() {
 }
 
 
-function Story(a) {
+function Story(props) {
+    console.log(props)
     return (
             <div class="story">
                 <div class="imagem">
-                    {a.imagem}
+                    <img src={props.imagem} alt="" />
                 </div>
                 <div class="usuario">
-                    {a.texto}
+                    {props.texto}
                 </div>
             </div>
     )

@@ -2,7 +2,7 @@
 function Usuario() {
     return (
         <div class="usuario">
-            <img src="assets/img/catanacomics.svg" />
+            <img src="assets/img/catanacomics.svg" alt=""/>
             <div class="texto">
                 <strong>catanacomics</strong>
                 <span>
@@ -41,13 +41,13 @@ function Sugestões() {
     )
 }
 
-function Sugestao(a) {
+function Sugestao(props) {
     return (
         <div class="sugestao">
             <div class="usuario">
-                {a.imagem}
+                <img src={props.imagem} alt=""/>
                 <div class="texto">
-                    <div class="nome">{a.texto}</div>
+                    <div class="nome">{props.texto}</div>
                     <div class="razao">Segue você</div>
                 </div>
             </div>
